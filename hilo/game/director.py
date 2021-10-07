@@ -29,7 +29,7 @@ class Director:
 
     def doUpdates(self, choice):
         """Args:"""
-        if (not self.shuffler.getScore() and choice == "h") or (self.shuffler.getScore() and choice == "l") and not (self.Shuffler.card[0] != self.shuffler.card[1]):
+        if (not self.shuffler.getScore() and choice == "h") or (self.shuffler.getScore() and choice == "l") and not (self.shuffler.card[0] != self.shuffler.card[1]):
             self.points = 100 + self.points
             return True
         else:
@@ -44,6 +44,10 @@ class Director:
         self.getInputs()
         print(f"The next card is: {self.shuffler.card[1]}")
         print(f"Your score is: {self.points}")
-        choice = input("Keep playing? [y/n] ")
-        self.keep_playing = (choice == "y")
+        if (self.shuffler.canPlay()):
+            choice = input("Keep playing? [y/n] ")
+            self.keep_playing = (choice == "y")
+        else:
+            self.keep_playing = False
+        
         pass
