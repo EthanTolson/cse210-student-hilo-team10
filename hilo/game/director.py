@@ -9,7 +9,6 @@ class Director:
         self.keep_playing = True
         self.score_points = True
 
-        pass
     
     def startGame(self):
         """Makes a loop to make sure that the game keeps playing as long as there are 
