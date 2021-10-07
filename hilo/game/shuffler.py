@@ -2,20 +2,38 @@
 import random as r
 
 class Shuffler:
-    """Attributes:"""
+    """
+    Contains functions vital to play in the director class such as checking 
+    if player can play, getting score, and getting cards
+    Attributes: 
+        card (array): List of two cards to compare
+    """
     def __init__(self):
+        """ Constructor
+        
+        Args: 
+            self : an instance of shuffler
+        """
         
         self.card = []
 
     def canPlay(self, points):
+        """Returns a bool value if player can or cannot continue playing
+
+        Args:
+            self : an instance of shuffler
+        """
         if(points <= 0):
             return False
         else:
             return True
 
     def getScore(self):
-        """Args:
-        self: an instance of shuffler"""
+        """Returns a bool value if card is higher or lower than previous card
+        
+        Args:
+            self : an instance of shuffler
+        """
         #True if the users card is greater than the shufflers
         #False if its less than the shufflers
         if self.card[0] > self.card[1]:
@@ -25,6 +43,15 @@ class Shuffler:
         
 
     def getCard(self):
+        """Generates cards to append self.card
+        
+        Args:
+            self : an instance of shuffler
+        """
+        if len(self.card) > 0:
+            cardTemp = self.card[1]
+        else:
+            cardTemp = r.randint(1,13)
         self.card = []
-        self.card.append(r.randint(1,13))
+        self.card.append(cardTemp)
         self.card.append(r.randint(1,13))
