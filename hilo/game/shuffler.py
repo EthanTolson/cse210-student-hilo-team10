@@ -4,11 +4,11 @@ import random as r
 class Shuffler:
     """Attributes:"""
     def __init__(self):
-        self.points = 300
+        
         self.card = []
 
-    def canPlay(self):
-        if(self.points <= 0):
+    def canPlay(self, points):
+        if(points <= 0):
             return False
         else:
             return True
