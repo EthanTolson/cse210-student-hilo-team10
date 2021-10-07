@@ -39,6 +39,7 @@ class Director:
 
     def doOutputs(self):
         """Args:"""
+        self.shuffler.getCard()
         print(f"The card is: {self.shuffler.card[0]}")
         self.getInputs()
         print(f"The next card is: {self.shuffler.card[1]}")
