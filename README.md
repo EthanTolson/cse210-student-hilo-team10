@@ -39,3 +39,5 @@ root                    (project root folder)
 Ethan Tolson - tol18009@byui.edu
 Jace Wilderman - jwilderman@byui.edu
 Dawson Miskin - miskindr13@gmail.com
+
+Austin Eldredge - eld20009@byui.edu
