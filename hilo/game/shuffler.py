@@ -22,6 +22,7 @@ class Shuffler:
 
         Args:
             self : an instance of shuffler
+            points (number): number of points for given game
         """
         if(points <= 0):
             return False
