@@ -38,3 +38,4 @@ root                    (project root folder)
 * TODO: Add your names and emails here
 Ethan Tolson - tol18009@byui.edu
 Jace Wilderman - jwilderman@byui.edu
+Dawson Miskin - miskindr13@gmail.com
