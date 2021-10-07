@@ -63,7 +63,7 @@ class Director:
         pass
 
     def doOutputs(self):
-        """Outputs game information for each round. Calls input function. Displays cards and score
+        """Outputs game information for each round. Calls input function. Displays cards and score. (¬‿ ¬)
         
         Args:
             self : an instance of Director
