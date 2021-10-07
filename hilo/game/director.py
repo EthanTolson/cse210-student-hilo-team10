@@ -44,7 +44,7 @@ class Director:
         self.getInputs()
         print(f"The next card is: {self.shuffler.card[1]}")
         print(f"Your score is: {self.points}")
-        if (self.shuffler.canPlay()):
+        if (self.shuffler.canPlay(self.points)):
             choice = input("Keep playing? [y/n] ")
             self.keep_playing = (choice == "y")
         else:
