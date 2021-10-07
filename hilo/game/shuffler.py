@@ -4,18 +4,19 @@ import random as r
 class Shuffler:
     """Attributes:"""
     def __init__(self):
-        """Args:"""
-        pass
+        self.points = 300
+        self.card = []
 
     def canPlay(self):
-        """Args:"""
-        pass
+        if(self.points <= 0):
+            return False
+        else:
+            return True
 
     def getScore(self):
-        """Args:"""
-        pass
+        """args:"""
 
     def getCard(self):
-        """Args:"""
-        pass
-    
+        self.card = []
+        self.card.append(r.randint(1,13))
+        self.card.append(r.randint(1,13))
